@@ -1,0 +1,80 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 300
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object shpRS232: TShape
+    Left = 160
+    Top = 120
+    Width = 65
+    Height = 65
+    Shape = stCircle
+  end
+  object shpIP: TShape
+    Left = 488
+    Top = 120
+    Width = 65
+    Height = 65
+    Shape = stCircle
+  end
+  object lblRS232: TLabel
+    Left = 88
+    Top = 80
+    Width = 85
+    Height = 13
+    Caption = 'Connexion RS232'
+  end
+  object lblIP: TLabel
+    Left = 432
+    Top = 80
+    Width = 64
+    Height = 13
+    Caption = 'Connexion IP'
+  end
+  object btnCoRS232: TButton
+    Left = 40
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = 'Connexion'
+    TabOrder = 0
+    OnClick = btnCoRS232Click
+  end
+  object btnDecoRS232: TButton
+    Left = 40
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'D'#233'connexion'
+    TabOrder = 1
+    OnClick = btnDecoRS232Click
+  end
+  object btnCoIP: TButton
+    Left = 360
+    Top = 120
+    Width = 75
+    Height = 25
+    Caption = 'Connexion'
+    TabOrder = 2
+    OnClick = btnCoIPClick
+  end
+  object btnDecoIP: TButton
+    Left = 360
+    Top = 168
+    Width = 75
+    Height = 25
+    Caption = 'D'#233'connexion'
+    TabOrder = 3
+    OnClick = btnDecoIPClick
+  end
+end

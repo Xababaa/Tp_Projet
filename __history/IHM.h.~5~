@@ -1,0 +1,37 @@
+//---------------------------------------------------------------------------
+
+#ifndef IHMH
+#define IHMH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include "RS232.h"
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// Composants gérés par l'EDI
+	TButton *btnCoRS232;
+	TButton *btnDecoRS232;
+	TShape *shpRS232;
+	TButton *btnCoIP;
+	TButton *btnDecoIP;
+	TShape *shpIP;
+	TLabel *lblRS232;
+	TLabel *lblIP;
+	void __fastcall btnCoRS232Click(TObject *Sender);
+	void __fastcall btnDecoRS232Click(TObject *Sender);
+	void __fastcall btnCoIPClick(TObject *Sender);
+	void __fastcall btnDecoIPClick(TObject *Sender);
+
+private:	// Déclarations utilisateur
+public:		// Déclarations utilisateur
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

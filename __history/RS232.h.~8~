@@ -1,0 +1,23 @@
+//---------------------------------------------------------------------------
+
+#ifndef RS232H
+#define RS232H
+#include <windows.h>
+
+//---------------------------------------------------------------------------
+class RS232
+{
+	private:
+		HANDLE hcom;
+		DCB serie;
+		OVERLAPPED over;
+
+	public:
+		bool ouverture();
+		bool ecriture(wchar_t *str);
+
+		bool fermeture();
+		char* lecture();
+
+};
+#endif

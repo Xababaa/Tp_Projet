@@ -1,0 +1,59 @@
+//---------------------------------------------------------------------------
+
+
+#pragma hdrstop
+
+#include "IHM.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnCoRS232Click(TObject *Sender)
+{
+	co=ouverture();
+	if(co==true){
+		shpRS232->Brush->Color=clLime;
+	}
+	else
+	{
+		shpRS232->Brush->Color=clRed;
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnDecoRS232Click(TObject *Sender)
+{
+   bool deco =true;
+	if(deco==true)
+	{
+		shpRS232->Brush->Color=clRed;
+	}
+	}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnCoIPClick(TObject *Sender)
+{
+
+	bool co =true;
+	if(co==true){
+		shpIP->Brush->Color=clLime;
+	}
+	else
+	{
+		shpIP->Brush->Color=clRed;
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::btnDecoIPClick(TObject *Sender)
+{
+bool deco =true;
+	if(deco==true)
+	{
+		shpIP->Brush->Color=clRed;
+	}
+}
+//---------------------------------------------------------------------------
