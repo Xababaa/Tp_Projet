@@ -35,6 +35,7 @@ __published:	// Composants gérés par l'EDI
 	void __fastcall serveurConnect(TIdContext *AContext);
 	void __fastcall serveurExecute(TIdContext *AContext);
 	void __fastcall serveurDisconnect(TIdContext *AContext);
+	void __fastcall memoTCPChange(TObject *Sender);
 
 
 private:	// Déclarations utilisateur
