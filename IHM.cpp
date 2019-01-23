@@ -35,7 +35,6 @@ void __fastcall TForm1::btnDecoRS232Click(TObject *Sender)
 {
    MonObjetRS232.fermeture();
    shpRS232->Brush->Color=clRed;
-
 }
 //---------------------------------------------------------------------------
 
